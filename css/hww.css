@@ -90,16 +90,16 @@
 }
 
 .hww__show-1::after{
-    background-image: url('../img/hww-img.jpg');
+    background-image: url('../img/hww-img.webp');
 }
 .hww__show-2::after{
-  background-image: url('../img/hww__img2.png');
+  background-image: url('../img/hww__img2.webp');
 }
 .hww__show-3::after{
-  background-image: url('../img/hww__img3.png');
+  background-image: url('../img/hww__img3.webp');
 }
 .hww__show-4::after{
-  background-image: url('../img/hww__img4.png');
+  background-image: url('../img/hww__img4.webp');
 }
 .hww__step{
   width: 50%;
