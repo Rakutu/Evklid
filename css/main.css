@@ -24,13 +24,13 @@
   background-position: center;
 }
 .main__bg1{
-  background-image: url(../img/main-img.jpg);
+  background-image: url(../img/main-img.webp);
 }
 .main__bg2{
-  background-image: url(../img/main-back2.jpg);
+  background-image: url(../img/main-back2.webp);
 }
 .main__bg3{
-  background-image: url(../img/main-back3.jpg);
+  background-image: url(../img/main-back3.webp);
 }
 .swiper-container .swiper-pagination-bullet{
   margin-left: 20px;
