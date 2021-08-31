@@ -21,16 +21,20 @@
     <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <!-- lazyload -->
+    <script defer src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 
     <!-- Development -->
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
     <!-- Production -->
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer src="https://unpkg.com/tippy.js@6"></script>
 
 </head>
 <body>
@@ -58,8 +62,11 @@
                       <li class="header__nav-item--mobile"><a href="#" class="header__nav-link--mobile">Контакты</a></li>
                   </ul>
                 </nav>
-                <img class="header__logo-small" src="img/header-logo-small.png" alt="Логотип">
-                <img class="header__logo-very-small" src="img/header-logo-very-small.png" alt="Логотип">
+                <img class="header__logo-small" srcset="img/header-logo-very-small.png 320w,
+                                                        img/header-logo-small.png 1025w" 
+                                                        sizes="(max-width: 321px) 320w,
+                                                               (max-width: 1025px 1025w" alt="Логотип"
+                                                        src="img/header-logo-small.png">
                 <nav class="header__right-block">
                     <ul class="header__nav" aria-hidden="true">
                         <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
@@ -215,8 +222,7 @@
                             <span class="faq__btn-plus"></span>
                         </button>
                         <p class="faq__question-ask">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi cumque velit, quidem aspernatur illum, explicabo maiores quisquam rem rerum illo aliquam pariatur obcaecati amet nesciunt atque error voluptatem nihil est reprehenderit quibusdam. Tenetur animi similique labore excepturi. Placeat nisi blanditiis quis libero, in sapiente amet cum fugiat rerum aspernatur velit.
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat harum tempora maxime sint atque, sed tempore delectus assumenda at nisi excepturi eius ad fuga corporis. Deserunt vel ipsam quibusdam eum quae officiis sed, provident ut tempora sunt corporis sit aliquid assumenda inventore necessitatibus, laborum omnis eius numquam hic aut minima ab? Odit, expedita explicabo natus excepturi, ad exercitationem provident illum corporis impedit voluptatibus dolor unde voluptatum autem, asperiores ex quae in fugit eum praesentium tenetur. Labore adipisci dolor saepe harum velit. Omnis magni maiores, nesciunt delectus, nihil cumque ex voluptatum at hic, numquam corporis ad. At omnis voluptas tempore repellat.
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свой, первую своих проектах наш но рукопись города путь агентство выйти залетают власти приставка там, снова рыбного щеке текстами мир диких рот вопроса одна свое вопрос обеспечивает встретил. Встретил вдали продолжил, однажды путь свой дорогу первую коварный пунктуация, мир, дал гор скатился сих сбить над рыбного заглавных правилами переулка. Которое наш это живет предупреждал на берегу эта от всех курсивных, имеет ее агентство он рекламных переулка сбить вдали встретил необходимыми имени своего своих скатился точках вскоре свой вопрос снова. Толку однажды что моей, послушавшись пор о курсивных диких запятой дорогу вопроса точках все, от всех переулка журчит? Взгляд, однажды? По всей его парадигматическая осталось продолжил коварных? Пустился большого бросил безорфографичный за имеет страну жизни прямо, маленький назад даль своих рукописи вдали запятой рыбными переписали ты пояс lorem всеми жаренные заголовок лучше? Необходимыми ее о дорогу безопасную залетают, пор, заголовок журчит предупреждал алфавит встретил семь сбить за, сих имеет осталось жаренные? Меня языком послушавшись что предупреждал текст запятой ты сбить буквенных ведущими текстами, продолжил деревни своего живет парадигматическая встретил, строчка коварный lorem семантика все маленькая!
                         </p>
                     </li>
                     <li class="faq__question-item">
@@ -225,8 +231,7 @@
                             <span class="faq__btn-plus"></span>
                         </button>
                         <p class="faq__question-ask">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi cumque velit, quidem aspernatur illum, explicabo maiores quisquam rem rerum illo aliquam pariatur obcaecati amet nesciunt atque error voluptatem nihil est reprehenderit quibusdam. Tenetur animi similique labore excepturi. Placeat nisi blanditiis quis libero, in sapiente amet cum fugiat rerum aspernatur velit.
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis eligendi perferendis consectetur? Dolorem, nemo quis fuga sapiente voluptatem nostrum? Excepturi nobis adipisci accusantium odio quis earum totam debitis velit ipsam, molestias modi beatae recusandae voluptatibus eveniet sed neque cum officiis aliquid perspiciatis. Ipsum non qui, at odio corporis deleniti dignissimos eum autem dolorem similique. Eos magni error dicta sapiente quibusdam obcaecati, quam amet hic commodi provident beatae quis fugiat facilis corrupti laboriosam alias velit molestias aliquam deserunt, aspernatur sit. Voluptatum optio nemo facilis, exercitationem ipsum, ab sit ducimus laboriosam aut recusandae dolorum tempora voluptatem quibusdam. Nam iste est consequatur possimus!
+                            Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Языкового точках предупреждал переписали? Даже, злых. Раз безорфографичный жизни напоивший имени lorem текст за которой пустился. Семантика не это образ повстречался за даль lorem продолжил? Все которой продолжил образ заманивший! Ipsum, ты составитель залетают своих бросил пояс они ее, свой запятой образ использовало, ему до! Моей имени что текст парадигматическая, диких, ведущими первую подпоясал силуэт предупреждал текстами своих? Жаренные власти ты раз однажды парадигматическая за послушавшись, над безопасную ему на берегу своих взгляд инициал букв лучше по всей, продолжил образ дорогу большого домах он единственное, первую злых имени заголовок. Предупреждал точках ручеек напоивший, осталось но первую выйти что языкового безопасную над семантика о текста грамматики вопрос своего большого текстов рукописи образ родного? Прямо большой не что даже взобравшись запятых пояс эта, маленький заглавных которое снова, дороге, меня заманивший раз. Родного заманивший коварных коварный несколько толку своего щеке собрал рукопись подзаголовок семь он домах она его маленький безопасную силуэт всемогущая, назад жаренные вопроса снова пояс они маленькая. Предупреждал лучше путь которой осталось океана родного буквоград буквенных ipsum ты продолжил. Пояс взобравшись текст запятой пустился несколько безопасную букв решила грустный гор злых ipsum использовало, вопроса запятых маленькая реторический подзаголовок, парадигматическая напоивший! Букв, переписали назад.
                         </p>
                     </li>
                     <li class="faq__question-item">
@@ -235,9 +240,7 @@
                             <span class="faq__btn-plus"></span>
                         </button>
                         <p class="faq__question-ask">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi cumque velit, quidem aspernatur illum, explicabo maiores quisquam rem rerum illo aliquam pariatur obcaecati amet nesciunt atque error voluptatem nihil est reprehenderit quibusdam. Tenetur animi similique labore excepturi. Placeat nisi blanditiis quis libero, in sapiente amet cum fugiat rerum aspernatur velit.
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla sed ipsa? Odio, ipsa aliquid? Non iusto quos vitae libero iure magni eum nesciunt accusamus aut est? Et, aspernatur quis fugit vel iusto at harum placeat fuga qui optio est voluptatem consequuntur dolorem. Quidem reiciendis quaerat in dolore eaque voluptatibus commodi libero ab fugit! Possimus hic exercitationem delectus tempore voluptatibus earum error inventore, eos illum animi ullam, qui voluptatem minus nulla incidunt quia pariatur ad amet aliquam dolores ducimus eligendi architecto porro! Nobis fugit dolorem deleniti laborum culpa tempora voluptatibus veniam quasi tempore, id suscipit accusantium, voluptates placeat aut deserunt?
-                        </p>
+                            Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Своих раз семантика ipsum текста власти? Своих предупредила ему рот продолжил, необходимыми рукописи взобравшись пояс безорфографичный взгляд о собрал рыбного?Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Семантика всемогущая моей прямо пор над, путь обеспечивает буквоград дорогу оксмокс, текстов она сих там несколько речью но! Последний предупредила вопрос имеет свою своих что текстов если назад строчка, букв запятой однажды lorem деревни имени приставка свое? Снова, по всей? Силуэт наш несколько решила не, но составитель точках правилами взгляд, повстречался буквенных свою рыбного жаренные бросил прямо ему строчка семантика пустился алфавит своих продолжил свой маленький. Что проектах города все? Даже, домах переписали, предупредила от всех предложения буквенных которое о путь своего толку за пор одна, вершину знаках маленькая журчит. Переулка, она?
                     </li>
                     <li class="faq__question-item">
                         <button class="faq__question">
@@ -245,8 +248,8 @@
                             <span class="faq__btn-plus"></span>
                         </button>
                         <p class="faq__question-ask">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi cumque velit, quidem aspernatur illum, explicabo maiores quisquam rem rerum illo aliquam pariatur obcaecati amet nesciunt atque error voluptatem nihil est reprehenderit quibusdam. Tenetur animi similique labore excepturi. Placeat nisi blanditiis quis libero, in sapiente amet cum fugiat rerum aspernatur velit.
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolorum rem inventore excepturi laudantium doloribus, alias pariatur quia vitae? Aut neque nihil nemo asperiores porro laudantium ipsum doloribus fugiat error itaque eius cupiditate hic enim, consectetur magnam possimus officiis atque quas. Enim nulla, inventore at vitae blanditiis porro voluptate, alias facere quisquam, animi recusandae? Distinctio natus vitae ipsa corrupti. Repellat doloremque vitae hic eveniet ad tenetur. Quisquam, cumque voluptates optio vero nam nostrum debitis commodi laboriosam quia perferendis nulla. Accusantium nisi, porro labore voluptates, dolorum unde sit sunt quisquam fugit facilis eaque possimus dicta exercitationem aut voluptatibus sint error voluptatum!
+                            Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Всеми приставка продолжил текстов семантика. Возвращайся от всех дал над, вершину буквенных пояс по всей собрал переулка запятых правилами семантика снова домах?
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Правилами имени семантика маленькая до заманивший встретил деревни свой по всей повстречался эта оксмокс силуэт рыбными прямо гор пояс, ведущими текстов!
                         </p>
                     </li>
                 </ul>
@@ -257,8 +260,10 @@
             <div class="container footer__block">
 
                 <div class="footer__nav">
-                    <img class="footer-logo" src="img/footer-logo.png" alt="Логотип">
-                    <img class="footer-logo-small" src="img/footer-logo-small.png" alt="Логотип">
+                    <img class="footer-logo" srcset="img/footer-logo-small.png 600w,
+                                                     img/footer-logo.png" 
+                                                        sizes="(max-width: 600px) 600w" alt="Логотип"
+                                                        src="img/footer-logo.png">
                     <nav class="footer__nav-menu">
                       <ul>
                         <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
